@@ -27,6 +27,6 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish --output
+      run: dotnet publish
     #- name: Restart service lifeway
     #  run: systemctl restart lifeway
