@@ -27,7 +27,7 @@ namespace TelegramBot
         protected override async Task ExecuteAsync(CancellationToken stoppingToken)
         {
             _logger.LogInformation("Telegram Bot started at: {time}", DateTimeOffset.Now);
-            _logger.LogInformation($"{settings.TelegramToken}", DateTimeOffset.Now);
+            _logger.LogInformation($"Toke: {settings.TelegramToken}", DateTimeOffset.Now);
 
             bot = new TelegramBotClient(settings.TelegramToken);
 
