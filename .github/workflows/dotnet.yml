@@ -29,4 +29,4 @@ jobs:
     - name: Publish
       run: dotnet publish
     - name: Restart service telegram.bot
-      run: sudo systemctl restart telegram.bot
+      run: systemctl restart telegram.bot
