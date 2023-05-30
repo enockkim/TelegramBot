@@ -27,6 +27,8 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
     - name: Publish
-      run: dotnet publish
+      run: dotnet publish      
+    - name: Who am i
+      run: whoami
     - name: Restart service telegram.bot
       run: systemctl restart telegram.bot
